@@ -1,1 +1,1 @@
-# festbot-admin-new
+# react-boilerplate

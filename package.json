@@ -1,0 +1,51 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.jsx",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack-cli --config webpack.prod.js",
+    "dev": "node ./devserver.js",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andormade/react-boilerplate.git"
+  },
+  "author": "Andor Polgar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andormade/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/andormade/react-boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^3.4.10",
+    "@storybook/addon-knobs": "^3.4.10",
+    "@storybook/addon-viewport": "^3.4.10",
+    "@storybook/addon-links": "^3.4.10",
+    "@storybook/react": "^4.0.0-alpha.18",
+    "babel-loader": "^8.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react-hot-loader": "^4.3.5",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.6",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "core-js": "^2.5.7",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0",
+    "styled-components": "^3.4.5"
+  }
+}

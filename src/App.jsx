@@ -11,13 +11,14 @@ margin:0;
 padding:0;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 100;
+	width:100%;
+	overflow-x: hidden;
 
 `;
 
 class App extends Component {
 	componentDidMount(){
 		document.body.style.margin = 0;
-		//document.body.style.overflow = 'hidden';
 	}
 	render() {
 		return (

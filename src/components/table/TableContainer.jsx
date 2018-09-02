@@ -11,6 +11,10 @@ const Photo = styled.div`
 	height: 10vw;
 `;
 
+const StyledReactTable = styled(ReactTable)`
+
+`
+
 const columns = [
 	{
 		Header: 'Date',
@@ -42,7 +46,7 @@ export class TableContainer extends Component {
 	render() {
 		return (
 			<div>
-				<ReactTable
+				<StyledReactTable
 					data={this.props.data}
 					columns={columns}
 					defaultPageSize={10}

@@ -14,7 +14,9 @@ const mapStateToProps = ({ ui }) => {
 const MainContainer = connect(mapStateToProps)(styled.div`
 	width: 100vw;
 	background-color: #aaa;
-    display: flex;
+	display: flex;
+	height:100%;
+	min-height:100vh;
 	transition: all 0.3s ease-out;
 	transform: translateX(${props=>props.menuIsActive?'200px':'0'});
 `);
@@ -22,7 +24,8 @@ const MainContainer = connect(mapStateToProps)(styled.div`
 const Content = styled.div`
 	background-color: #ddd;
     width: 100%;
-    padding:10px;
+	padding:10px;
+	padding-top:45px;
 `;
 
 export class AdminContainer extends Component {

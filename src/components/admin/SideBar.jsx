@@ -10,8 +10,8 @@ color:#eee;
 background-color:#5c5c5c;
 transition: all 0.3s ease-in;
 width:200px;
-height:100%;
-
+height:calc(100% - 45px);
+padding-top:45px;
 `
 
 

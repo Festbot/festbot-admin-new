@@ -7,10 +7,13 @@ import { UPDATE_MENU_VISIBILITY } from '../../store/actions/actionTypes.js';
 
 const HeaderBar = styled.div`
 	width: 100%;
+	position:absolute;
+	z-index:1;
 	background-color: rgb(70, 70, 140);
 	background-color: #4f4f8f;
 	color: #eee;
 	display: flex;
+	height:45px;
 `;
 
 const HeaderTitle = styled.div`

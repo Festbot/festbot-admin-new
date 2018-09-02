@@ -6,7 +6,7 @@ module.exports = merge(common, {
 	devtool: 'source-map',
 	entry: {
 		app: [
-			'webpack-dev-server/client?http://127.0.0.1:3001',
+			'webpack-dev-server/client?http://127.0.0.1:3006',
 			'webpack/hot/only-dev-server'
 		]
 	},

@@ -7,7 +7,7 @@ const compiler = webpack(config);
 const devServer = {
 	disableHostCheck: true,
 	host: '0.0.0.0',
-	port: 3001,
+	port: 3006,
 	historyApiFallback: true,
 	hot: true,
 	hotOnly: true,

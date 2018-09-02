@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import store from './store/store.js';
+import { Provider } from 'react-redux';
 import App from './App.jsx';
 import { AppContainer } from 'react-hot-loader';
+import 'babel-polyfill';
 import 'core-js';
+
 
 const render = function(Component) {
 	ReactDOM.render(
 		<AppContainer>
-			<Component />
+			<Provider store={store}>
+				<Component />
+			</Provider>
 		</AppContainer>,
 		document.getElementById('root')
 	);

@@ -18,7 +18,8 @@ const HeaderBar = styled.div`
 
 const HeaderTitle = styled.div`
 	display: inline-block;
-	padding: 10px 15px;
+	padding: 4px 15px;
+	font-size:1.6rem;
 `;
 
 export class Header extends Component {

@@ -1,35 +1,37 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import matchSorter from 'match-sorter'
-import ReactTable from 'react-table';
+import matchSorter from 'match-sorter';
+import CreateTable from './CreateTable.jsx';
 
 const Photo = styled.div`
 	background-size: cover;
 	background-position: center center;
-	width: 20vw;
-	height: 10vw;
+  height: 10vw;
+  width:20vw;
+	display: flex;
+	margin: 0 auto;
 `;
-
-const StyledReactTable = styled(ReactTable)`
-
-`
 
 const columns = [
 	{
-		Header: 'Date',
-		accessor: 'dates[0]' // String-based value accessors!
+		Header: 'Start Date',
+    accessor: 'dates',
+    Cell: props => (
+      props.value[0]
+    )
 	},
 	{
 		Header: 'Name',
-    accessor: 'name',
-    filterMethod: (filter, rows) =>
-                    matchSorter(rows, filter.value, { keys: ["name"] }),
-                  filterAll: true
+		accessor: 'name',
+		filterMethod: (filter, rows) =>
+			matchSorter(rows, filter.value, { keys: ['name'] }),
+		filterAll: true
 	},
 	{
 		Header: 'Photo',
 		accessor: 'coverPhoto',
+
 		Cell: props => (
 			<Photo
 				style={{
@@ -38,21 +40,24 @@ const columns = [
 					}/-/resize/600/)`
 				}}
 			/>
-		) 
+		)
 	}
 ];
 
 export class TableContainer extends Component {
+	clickHandler = e => {
+		console.log(e);
+	};
 	render() {
 		return (
 			<div>
-				<StyledReactTable
+				<CreateTable
 					data={this.props.data}
 					columns={columns}
-					defaultPageSize={10}
-					filterable
-			
+          defaultPageSize={10}
+          
 				/>
+				
 			</div>
 		);
 	}

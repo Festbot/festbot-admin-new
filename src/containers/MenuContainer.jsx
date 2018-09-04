@@ -14,6 +14,7 @@ color: #eee;
 pointer:pointer ;
 display:block;
 margin:3px 2px;
+font-size:1.2rem;
 &:hover{
   background-color:#2f2f2f;
   background-color:#8fafaf;

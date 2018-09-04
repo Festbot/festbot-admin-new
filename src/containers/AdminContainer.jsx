@@ -24,7 +24,6 @@ const MainContainer = connect(mapStateToProps)(styled.div`
 const Content = styled.div`
 	background-color: #ddd;
     width: 100%;
-	padding:10px;
 	padding-top:45px;
 `;
 
